@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Aside from "@/components/aside/index";
+import Aside from "@/components/aside";
 import "./home.css";
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms)) 
@@ -12,8 +12,9 @@ export default async function  Home() {
         <>
         
         <main>
-        
+            <Aside />
         </main>
+
         </>
     )
 
