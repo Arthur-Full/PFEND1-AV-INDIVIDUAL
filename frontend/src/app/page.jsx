@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Rodape from "@/components/footer";
-import Aside from "@/components/aside";
+import Aside from "@/components/header";
 
 // const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
@@ -14,7 +14,6 @@ export default async function Home() {
   return (
     <>
 
-      <Aside/>
 
 
       {/* <Rodape/> */}

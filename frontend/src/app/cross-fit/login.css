@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Garante que o html e o body ocupem 100% da altura */
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 98.4vh;
+    background-color: cornflowerblue;
+    background-image: url(/Imagens/fundo-login.png);
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+.container-img {
+    width: 150vw; 
+    height: 100vh;
+}
+
+
+
+.container-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.box-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 50px 2px rgb(109, 43, 43);
+    border-radius: 5px;
+    width: 30vw;
+    height: 55vh;
+    border-radius: 5px;
+    border: 2px solid brown ;
+    background-color: rgb(61, 61, 61);
+}
+
+.box-form {
+    height: 45vh;
+    width: 25vw;
+    background-color: aqua;
+}
+
+.linha {
+    width: 170px;
+    background-color: brown;
+    border: 2px solid brown;
+}
