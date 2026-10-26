@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import Header from "@/components/header/index";
 import Aside from "@/components/header/index";
 import ServerClient from "@/components/serverClient";
 import "./globals.css";

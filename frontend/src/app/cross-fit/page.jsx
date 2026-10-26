@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./login.css";
 
-export default async function Home() {
+export default function Home() {
 
     return (
 
