@@ -1,9 +1,103 @@
-.topbar {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    background-color: #290000;
-    border-bottom: 2px solid #e9898971;
-    width: 100%;
-    height: 85px;
+.forge-header {
+  --forge-red: #e50920;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  min-height: 78px;
+  padding: 8px clamp(16px, 3vw, 34px);
+  gap: clamp(12px, 2vw, 28px);
+  background: linear-gradient(90deg, #080d10, #0b1013);
+  border-bottom: 1px solid #263036;
+  color: #f4f5f6;
+}
+
+.forge-header-brand { gap: 12px; color: #f4f5f6; }
+.forge-header-brand:hover { color: #fff; }
+
+.forge-header-brand img {
+  display: block;
+  width: 62px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.forge-header-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: .09em;
+  line-height: 1.05;
+}
+
+.forge-header-title b { color: var(--forge-red); }
+.forge-header-title small { margin-top: 4px; color: #929da2; font-size: 9px; letter-spacing: .34em; }
+
+.forge-header-search {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  flex: 1 1 360px;
+  max-width: 560px;
+  height: 42px;
+  margin: 0 auto;
+  padding: 0 13px;
+  color: #c5cdd1;
+  background: #0d1216;
+  border: 1px solid #202a30;
+  border-radius: 9px;
+}
+
+.forge-header-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #f4f5f6;
+  background: transparent;
+  font-size: 13px;
+}
+
+.forge-header-search input::placeholder { color: #9aa5ab; }
+
+.forge-header .nav-link {
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #d7dcdf;
+  font-size: 14px;
+}
+
+.forge-header .nav-link.active {
+  color: #fff;
+  background: linear-gradient(90deg, #9d0716, #3a0b10);
+  border-left: 3px solid var(--forge-red);
+  padding-left: 12px;
+}
+
+.forge-header .nav-link:hover { color: #fff; background-color: #171c20; }
+.forge-header .nav-link.active:hover { background: linear-gradient(90deg, #b5091c, #481016); }
+
+.forge-header-logout {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  color: #d7dcdf;
+  background: #101619;
+  border: 1px solid #263036;
+  border-radius: 8px;
+  transition: color .15s, border-color .15s, background .15s;
+}
+
+.forge-header-logout:hover { color: #fff; background: #8f0715; border-color: var(--forge-red); }
+
+@media (max-width: 575.98px) {
+  .forge-header { min-height: 68px; padding: 8px 12px; gap: 8px; flex-wrap: wrap; }
+  .forge-header-brand { gap: 8px; }
+  .forge-header-brand img { width: 47px; height: 48px; }
+  .forge-header-title { font-size: 15px; }
+  .forge-header .nav-link { padding: 9px; font-size: 13px; }
+  .forge-header .nav-link.active { padding-left: 7px; }
+  .forge-header-search { order: 3; flex: 1 0 100%; max-width: none; height: 38px; margin: 0; }
+  .forge-header-logout { margin-left: auto; width: 36px; height: 36px; flex-basis: 36px; }
 }

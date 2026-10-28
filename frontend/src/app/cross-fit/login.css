@@ -24,8 +24,6 @@ main {
     height: 100vh;
 }
 
-
-
 .container-box {
     display: flex;
     align-items: center;
@@ -70,6 +68,36 @@ main {
     color: #fff;
 }
 
+.box-form a.btn-logar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23vw;
+    min-height: 6vh;
+    background: linear-gradient(1deg, #640505, #640505 ,#1f0808);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.box-form a.btn-logar:hover {
+    color: #fff;
+    background: linear-gradient(1deg, #1f0808,#640505, #640505 );
+}
+
+.auth-register-link {
+    margin-top: 9px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.auth-register-link a { color: #ff7c87; font-weight: bold; text-decoration: none; }
+.auth-register-link a:hover { color: #fff; text-decoration: underline; }
+
 .box-form button:hover{
     background: linear-gradient(1deg, #1f0808,#640505, #640505 );
 }
@@ -99,6 +127,11 @@ svg {
     border-radius: 5px;
     border: 2px solid rgb(160, 160, 160);
     background-color: transparent;
+}
+
+.espaco-img:focus-within {
+    border-color: #e50920;
+    box-shadow: 0 0 0 2px rgba(229, 9, 32, 0.22);
 }
 
 .espaco-img img {

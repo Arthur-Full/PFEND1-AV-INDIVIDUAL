@@ -1,0 +1,69 @@
+.register-page {
+    position: relative;
+    min-height: 98.4vh;
+    height: auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.register-page .container-img {
+    position: static;
+    width: 150vw;
+    height: 100vh;
+}
+
+.register-container-box {
+    position: static;
+    height: 60vh;
+    min-height: 0;
+    flex-shrink: 1;
+}
+
+.register-box-login {
+    width: min(560px, 92vw);
+    height: auto;
+    min-height: 0;
+    padding: 24px clamp(18px, 4vw, 42px);
+    border-color: brown;
+}
+
+.register-box-form {
+    width: 100%;
+    height: auto;
+    padding: 8px 0;
+}
+
+.register-box-form h1 { margin-bottom: 6px; text-align: center; }
+.register-box-form > p { margin-bottom: 18px; text-align: center; }
+
+.register-page .linha {
+    align-self: flex-start;
+    margin: 0 0 12px;
+}
+
+.register-form {
+    width: 100%;
+    height: auto;
+    gap: 12px;
+    margin: 0 0 18px;
+    padding-bottom: 18px;
+}
+
+.register-form .espaco-img { width: 100%; padding: 0 10px; }
+.register-form .espaco-img svg { flex: 0 0 auto; margin: 0; }
+.register-form input { min-width: 0; height: 46px; }
+.register-form input[type="date"] { color-scheme: dark; }
+
+.register-box-form a.btn-logar {
+    width: 100%;
+    min-height: 48px;
+    font-size: 20px;
+}
+
+.register-box-form .auth-register-link { margin: 14px 0 0; }
+
+@media (max-width: 480px) {
+    .register-box-login { padding: 18px 16px; }
+    .register-box-form h1 { font-size: 25px; }
+    .register-box-form > p { font-size: 14px; }
+}

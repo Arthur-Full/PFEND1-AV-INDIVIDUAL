@@ -1,72 +1,31 @@
-"use Client"
+"use client";
 
-import { createIcons, LineStyle, LayoutDashboard } from 'lucide-react';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { House, Dumbbell, CalendarDays, ChartNoAxesColumnIncreasing, Flame, UsersRound, Settings } from "lucide-react";
+
+const links = [
+  { href: "/cross-fit/dashboard", label: "Início", Icon: House },
+
+];
 
 export default function Aside() {
-    return (
-        <div
-            className="d-flex flex-column flex-shrink-0 p-3 bg-dark vh-100 position-fixed "
-            style={{ width: 280 }}
-        >
-            {" "}
-            <a
-                imagem="/imagens/logo.png"
-                href="/"
-                className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-            
-            >
-                {" "}
-                <svg className="bi pe-none me-2" width={40} height={32} aria-hidden="true">
-                    <use xlinkHref="#bootstrap" />
-                </svg>{" "}
-                <span className="fs-4 text-white"></span>{" "}
-            </a>{" "}
-            <hr />{" "}
-            <ul className="nav nav-pills flex-column mb-auto">
-                {" "}
-                <li className="nav-item">
-                    {" "}
-                    <a href="#" className="nav-link active text-white" aria-current="page">
-                        {" "}
-                        <svg className="bi pe-none me-2 text-white" width={16} height={16} aria-hidden="true">
-                            <use xlinkHref="#home" />
-                        </svg>
-                        <LayoutDashboard className='p'/>Dashboard
-                    </a>{" "}
-                </li>{" "}
-                <li>
-                    {" "}
-                    <a href="#" className="nav-link link-body-emphasis text-white">
-                        {" "}
-                        <svg className="bi pe-none me-2 text-white" width={16} height={16} aria-hidden="true">
-                            <use xlinkHref="#speedometer2" />
-                        </svg>
-                        Treinos
-                    </a>{" "}
-                </li>{" "}
-                <li>
-                    {" "}
-                    <a href="#" className="nav-link link-body-emphasis text-white">
-                        {" "}
-                        <svg className="bi pe-none me-2" width={16} height={16} aria-hidden="true">
-                            <use xlinkHref="#table" />
-                        </svg>
-                        Orders
-                    </a>{" "}
-                </li>{" "}
-                <li>
-                    {" "}
-                    <a href="#" className="nav-link link-body-emphasis text-white">
-                        {" "}
-                        <svg className="bi pe-none me-2" width={16} height={16} aria-hidden="true">
-                            <use xlinkHref="#grid" />
-                        </svg>
-                        Products
-                    </a>{" "}
-                </li>{" "}
-                <li>{" "}</li>{" "}
-            </ul>{" "}
-            <hr />{" "}
-        </div>
-    )
+  const pathname = usePathname();
+  const detailPage = pathname?.includes("/dashboard/") && pathname !== "/cross-fit/dashboard/";
+  return (
+    <aside className="forge-aside d-flex flex-column flex-shrink-0 p-3 vh-100">
+      <Link href="/cross-fit/dashboard" className="forge-brand d-flex align-items-center justify-content-center mb-4">
+        <img src="/Imagens/logo.png" alt="Forge Fitness Training" />
+      </Link>
+      <nav className="nav nav-pills flex-column gap-1" aria-label="Navegação principal">
+        {links.map(({ href, label, Icon }, index) => {
+          const active = detailPage ? index === 1 : index === 0;
+          return <Link key={label} href={href} className={`nav-link d-flex align-items-center gap-3 ${active ? "active" : ""}`} aria-current={active ? "page" : undefined}>
+            <Icon size={20} aria-hidden="true" />{label}
+          </Link>;
+        })}
+      </nav>
+      <p className="forge-aside-quote mt-auto mb-0">DISCIPLINA HOJE,<br />RESULTADOS AMANHÃ.</p>
+    </aside>
+  );
 }

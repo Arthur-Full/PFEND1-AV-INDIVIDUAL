@@ -1,0 +1,106 @@
+[
+  {
+    "id": "upper-body-forca",
+    "titulo": "Upper Body Força",
+    "categoria": "Força",
+    "duracao": "45 min",
+    "nivel": "Intermediário",
+    "objetivo": "Força",
+    "imagem": "/Imagens/fundo-login.png",
+    "resumo": "Treino focado no desenvolvimento da força dos membros superiores, com ênfase em movimentos compostos. Mantenha a técnica e o controle em cada repetição.",
+    "exercicios": [
+      {"nome":"Supino Reto","series":4,"repeticoes":"6–8 reps","descanso":"2 min","grupo":"Força","orientacao":"Mantenha os pés firmes no chão e o core ativado durante todo o movimento."},
+      {"nome":"Barra Fixa","series":4,"repeticoes":"6–10 reps","descanso":"2 min","grupo":"Força","orientacao":"Use a pegada pronada e mantenha o movimento controlado."},
+      {"nome":"Desenvolvimento com Halteres","series":3,"repeticoes":"8–10 reps","descanso":"90 seg","grupo":"Força","orientacao":"Evite arquear a lombar. Mantenha o abdômen contraído."},
+      {"nome":"Remada Curvada","series":3,"repeticoes":"8–10 reps","descanso":"90 seg","grupo":"Força","orientacao":"Mantenha a coluna neutra e puxe o peso em direção ao abdômen."},
+      {"nome":"Face Pull","series":3,"repeticoes":"12–15 reps","descanso":"60 seg","grupo":"Saúde Postural","orientacao":"Foque na contração do trapézio e mantenha os cotovelos altos."}
+    ],
+    "orientacoes": ["Faça 5 a 8 minutos de aquecimento antes de iniciar.","Escolha cargas que permitam executar todas as repetições com boa técnica.","Respeite os intervalos de descanso indicados.","Interrompa o exercício se sentir dor aguda e procure orientação profissional."]
+  },
+  {
+    "id": "wod-do-dia",
+    "titulo": "WOD do Dia",
+    "categoria": "Condicionamento",
+    "duracao": "20 min",
+    "nivel": "Todos",
+    "objetivo": "Resistência",
+    "imagem": "/Imagens/fundo-login.png",
+    "resumo": "Um circuito dinâmico para elevar o condicionamento. Trabalhe em ritmo constante e adapte a intensidade ao seu nível.",
+    "exercicios": [
+      {"nome":"Burpee","series":4,"repeticoes":"10 reps","descanso":"45 seg","grupo":"Condicionamento","orientacao":"Apoie as mãos no chão e aterrisse com controle."},
+      {"nome":"Agachamento com Kettlebell","series":4,"repeticoes":"15 reps","descanso":"45 seg","grupo":"Força","orientacao":"Mantenha o peito aberto e os joelhos alinhados aos pés."},
+      {"nome":"Remo Indoor","series":4,"repeticoes":"250 m","descanso":"60 seg","grupo":"Cardio","orientacao":"Empurre primeiro com as pernas e finalize com os braços."},
+      {"nome":"Abdominal Remador","series":3,"repeticoes":"15 reps","descanso":"45 seg","grupo":"Core","orientacao":"Suba com controle sem puxar o pescoço."}
+    ],
+    "orientacoes": ["Aqueça por 5 minutos com movimentos leves.","Complete as estações na ordem apresentada.","Descanse o necessário para manter a execução segura.","Registre o tempo total para acompanhar sua evolução."]
+  },
+  {
+    "id": "mobilidade-core",
+    "titulo": "Mobilidade e Core",
+    "categoria": "Mobilidade",
+    "duracao": "30 min",
+    "nivel": "Todos",
+    "objetivo": "Estabilidade",
+    "imagem": "/Imagens/fundo-login.png",
+    "resumo": "Sessão para melhorar a mobilidade e fortalecer a região central do corpo com movimentos controlados.",
+    "exercicios": [
+      {"nome":"Prancha Frontal","series":3,"repeticoes":"40 seg","descanso":"30 seg","grupo":"Core","orientacao":"Mantenha o corpo alinhado e respire sem relaxar o abdômen."},
+      {"nome":"Dead Bug","series":3,"repeticoes":"10 por lado","descanso":"30 seg","grupo":"Core","orientacao":"Mantenha a lombar apoiada no chão durante todo o exercício."},
+      {"nome":"Alongamento do Psoas","series":3,"repeticoes":"30 seg por lado","descanso":"20 seg","grupo":"Mobilidade","orientacao":"Avance o quadril suavemente sem arquear a lombar."},
+      {"nome":"Rotação Torácica","series":3,"repeticoes":"8 por lado","descanso":"20 seg","grupo":"Mobilidade","orientacao":"Gire a partir do tronco mantendo o quadril estável."}
+    ],
+    "orientacoes": ["Use um ritmo confortável e sem movimentos bruscos.","Mantenha a respiração fluida durante os alongamentos.","Faça os dois lados com o mesmo tempo.","A amplitude deve ser confortável e sem dor."]
+  },
+  {
+    "id": "lower-body-potencia",
+    "titulo": "Lower Body Potência",
+    "categoria": "Força",
+    "duracao": "40 min",
+    "nivel": "Avançado",
+    "objetivo": "Potência",
+    "imagem": "/Imagens/fundo-login.png",
+    "resumo": "Trabalho de força e potência para membros inferiores com foco em estabilidade, amplitude e execução eficiente.",
+    "exercicios": [
+      {"nome":"Agachamento Livre","series":4,"repeticoes":"6–8 reps","descanso":"2 min","grupo":"Força","orientacao":"Desça com controle mantendo os pés apoiados e o tronco firme."},
+      {"nome":"Levantamento Terra Romeno","series":4,"repeticoes":"8 reps","descanso":"90 seg","grupo":"Força","orientacao":"Leve o quadril para trás mantendo a barra próxima às pernas."},
+      {"nome":"Avanço Alternado","series":3,"repeticoes":"10 por lado","descanso":"60 seg","grupo":"Estabilidade","orientacao":"Dê passos firmes e mantenha o joelho alinhado ao pé."},
+      {"nome":"Salto na Caixa","series":3,"repeticoes":"8 reps","descanso":"90 seg","grupo":"Potência","orientacao":"Pouse suavemente e desça da caixa com cuidado."}
+    ],
+    "orientacoes": ["Aqueça quadris, joelhos e tornozelos antes das séries.","Priorize a qualidade do movimento sobre a carga.","Recupere completamente entre os exercícios de potência.","Use uma caixa adequada à sua experiência."]
+  },
+  {
+    "id": "cardio-endurance",
+    "titulo": "Cardio Endurance",
+    "categoria": "Condicionamento",
+    "duracao": "35 min",
+    "nivel": "Intermediário",
+    "objetivo": "Resistência cardiovascular",
+    "imagem": "/Imagens/fundo-login.png",
+    "resumo": "Intervalos de cardio para desenvolver resistência mantendo um ritmo sustentável ao longo da sessão.",
+    "exercicios": [
+      {"nome":"Corrida na Esteira","series":5,"repeticoes":"3 min","descanso":"1 min","grupo":"Cardio","orientacao":"Comece em ritmo confortável e aumente gradualmente."},
+      {"nome":"Bike Air Bike","series":4,"repeticoes":"45 seg","descanso":"45 seg","grupo":"Condicionamento","orientacao":"Mantenha cadência regular e postura estável."},
+      {"nome":"Double Unders","series":4,"repeticoes":"30 reps","descanso":"45 seg","grupo":"Coordenação","orientacao":"Gire a corda pelos punhos e salte baixo."},
+      {"nome":"Caminhada de Recuperação","series":1,"repeticoes":"5 min","descanso":"—","grupo":"Recuperação","orientacao":"Reduza o ritmo gradualmente para finalizar a sessão."}
+    ],
+    "orientacoes": ["Ajuste a intensidade de acordo com seu condicionamento.","Hidrate-se antes e depois do treino.","Use calçado adequado para a atividade.","Finalize com alguns minutos de recuperação leve."]
+  },
+  {
+    "id": "full-body-funcional",
+    "titulo": "Full Body Funcional",
+    "categoria": "Funcional",
+    "duracao": "50 min",
+    "nivel": "Intermediário",
+    "objetivo": "Condicionamento geral",
+    "imagem": "/Imagens/fundo-login.png",
+    "resumo": "Treino completo com movimentos funcionais para trabalhar força, coordenação e condicionamento em uma sessão.",
+    "exercicios": [
+      {"nome":"Thruster com Halteres","series":4,"repeticoes":"10 reps","descanso":"60 seg","grupo":"Funcional","orientacao":"Una o agachamento à extensão dos braços em um movimento fluido."},
+      {"nome":"Flexão de Braço","series":3,"repeticoes":"10–12 reps","descanso":"60 seg","grupo":"Força","orientacao":"Mantenha o corpo alinhado dos ombros aos tornozelos."},
+      {"nome":"Kettlebell Swing","series":4,"repeticoes":"15 reps","descanso":"60 seg","grupo":"Potência","orientacao":"Gere o movimento pelo quadril e mantenha os braços relaxados."},
+      {"nome":"Farmer Walk","series":3,"repeticoes":"30 m","descanso":"60 seg","grupo":"Estabilidade","orientacao":"Caminhe com postura alta e ombros encaixados."},
+      {"nome":"Mountain Climber","series":3,"repeticoes":"30 seg","descanso":"45 seg","grupo":"Core","orientacao":"Alterne os joelhos mantendo as mãos firmes no chão."}
+    ],
+    "orientacoes": ["Prepare o espaço e confira os equipamentos antes de começar.","Execute os exercícios na sequência indicada.","Faça pausas extras se a técnica começar a falhar.","Anote cargas e repetições para acompanhar seu progresso."]
+  }
+]
